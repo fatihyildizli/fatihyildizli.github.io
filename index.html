@@ -22,6 +22,12 @@
    
    
 <style>
+#c {background: black;}
+canvas {display: block; position:absolute;
+      left:0;
+      top:0;
+      z-index:-1;}
+
 img.grey { 
 -webkit-filter: grayscale(100%);
 filter: grayscale(100%);
@@ -149,20 +155,18 @@ img:hover {
     -ms-transform:  scaleX(0.30) scaleY(0.30) ;
   }
 }
-body{ 
-    background: transparent url("img/bg.png") no-repeat top center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
+
 
 </style>
-
+<style type="text/css">
+    #c{ position:fixed;}
+</style>
 </head>
 
-<body>
+<body onload="draw()">
+<canvas id="c"></canvas>
 <div class="container">
-<section>
+<section> 
  <h3 style="color:white">Fatih YILDIZLI <small class="pull-right"><kbd>Software Engineer </kbd></small></h3>
 
  <center><img src="img/me.jpeg" class="img-circle" width="120" height="120"></center>
@@ -204,37 +208,38 @@ body{
  </h4>
 <div id="bd" class="collapse">
 </br>
+
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
 ASP.NET Web API 2
   </div>
 </div>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   ariaaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
 .Net Core</span>
   </div>
 </div>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-  <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
+  <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
   ASP.NET</span>
   </div>
 </div>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
  Python</span>
   </div>
 </div>
 
 </div>
-</div>
+</div> 
   </div>
   
   <div class="row">
@@ -242,41 +247,42 @@ ASP.NET Web API 2
 <h4><kbd>Business Layer</kbd>  <button type="button" class="btn btn-default pull-right" style="cursor:default" data-toggle="collapse" data-target="#fd" ><i id="element-animation" class="fa fa-angle-double-down"></i><small> See qualifications </small></button></h4>
  <div id="fd" class="collapse">
  </br>
+
  <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-  <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
+  <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
  Elastic Search </span>
   </div>
 </div>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
  Redis</span>
   </div>
 </div>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
  RabbitMQ</span>
   </div></div>
   <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
  Fluent Validation</span>
   </div></div>
   <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
  Log4Net</span></div></div>
  <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
  NUnit</span>
   </div>
 </div>
@@ -289,16 +295,16 @@ ASP.NET Web API 2
 <div id="wm" class="collapse">
 </br>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
  Entity Framework</span>
   </div>
 </div>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
  Dapper</span>
   </div>
 </div>
@@ -311,31 +317,31 @@ ASP.NET Web API 2
 <div id="dd" class="collapse">
 </br>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   aaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
  MongoDB</span>
   </div>
 </div>
 
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
  PouchDB</span>
   </div>
 </div>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
  MSSQL</span>
   </div>
 </div>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
  RavenDB</span>
   </div>
 </div>
@@ -348,52 +354,52 @@ ASP.NET Web API 2
 <div id="dt" class="collapse">
 </br>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   aaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
  JIRA</span>
   </div>
 </div>
 
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:black"></i>
  Confluence</span>
   </div>
 </div>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
  Scrum - Agile Development</span>
   </div>
 </div>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
  OOP Programming</span>
   </div>
 </div>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
  SOLID</span>
   </div>
 </div>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
  Web Scraping & Crawling</span>
   </div>
 </div>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
  Wordpress</span>
   </div>
 </div>
@@ -408,23 +414,23 @@ ASP.NET Web API 2
 <div id="d" class="collapse">
 </br>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   ariaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
  Adobe Photoshop</span>
   </div>
 </div>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   ariaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
 HTML5 -CSS3</span>
   </div>
 </div>
 <div class="progress" style="background-color:transparent">
-  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
   ariaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-   <span class="pull-left" style="color:#000;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
+   <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif">  <i class="fa fa-spinner fa-spin" style="color:black"></i>
 Javascript</span>
   </div>
 </div>
@@ -451,5 +457,59 @@ Javascript</span>
     </footer>
  </div>
 </body>
+<script type="text/javascript"> function draw(){
+var c = document.getElementById("c");
+var ctx = c.getContext("2d");
+c.height = window.innerHeight;
+c.width = window.innerWidth;
 
+
+var set = "fatih yıldızlı";
+
+set = set.split("");
+
+var font_size = 10;
+var columns = c.width/font_size; 
+var drops = [];
+
+for(var x = 0; x < columns; x++)
+  drops[x] = 1; 
+
+function draw()
+{
+
+  ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+  ctx.fillRect(0, 0, c.width, c.height);
+  
+  ctx.fillStyle = "#0F0"; 
+  ctx.font = font_size + "px arial";
+  
+  for(var i = 0; i < drops.length; i++)
+  {
+    
+    var text = set[Math.floor(Math.random()*set.length)];
+  
+    ctx.fillText(text, i*font_size, drops[i]*font_size);
+    
+  
+    if(drops[i]*font_size > c.height && Math.random() > 0.975)
+      drops[i] = 0;
+    
+    
+    drops[i]++;
+  }
+}
+
+setInterval(draw, 33); }
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-61816066-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-61816066-2');
+</script>
 </html>
