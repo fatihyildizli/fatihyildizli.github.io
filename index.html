@@ -1,1 +1,361 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="description" content="Fatih Yıldızlı Open Cv"><meta name="keywords" content="Fatih Yıldızlı,fyildizli"><meta name="author" content="Fatih Yıldızlı"><title>Fatih YILDIZLI | Open Cv</title><meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="css/bootstrap.min.css"> <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> <link rel="icon" type="image/x-icon" href="img/favicon.ico"><script src="js/jquery.min.js"></script><script src="js/bootstrap.min.js"></script><style>.img-circle {border-radius: 50%;border: 3px solid;border-color: lightgreen;.progress-bar-success{background-color: black;}kbd{background-color: #5bc0de; color:black; font-weight: bold;}#c{background: black;}canvas{display: block; position:absolute; left:0; top:0; z-index:-1;}img.grey{-webkit-filter: grayscale(100%);filter: grayscale(100%);}img:hover{-webkit-filter: grayscale(0%); -webkit-transition: .5s ease-in-out; -moz-filter: grayscale(0%); -moz-transition: .5s ease-in-out; -o-filter: grayscale(0%); -o-transition: .5s ease-in-out; filter:grayscale(0%);}#element-animation{animation: animationFrames linear 3s; animation-iteration-count: infinite; transform-origin: 50% 50%; -webkit-animation: animationFrames linear 3s; -webkit-animation-iteration-count: infinite; -webkit-transform-origin: 50% 50%; -moz-animation: animationFrames linear 3s; -moz-animation-iteration-count: infinite; -moz-transform-origin: 50% 50%; -o-animation: animationFrames linear 3s; -o-animation-iteration-count: infinite; -o-transform-origin: 50% 50%; -ms-animation: animationFrames linear 3s; -ms-animation-iteration-count: infinite; -ms-transform-origin: 50% 50%;}@keyframes animationFrames{0%{opacity:1; transform: scaleX(1.00) scaleY(1.00) ;}25%{opacity:1; transform: scaleX(0.95) scaleY(0.95) ;}50%{opacity:1; transform: scaleX(1.10) scaleY(1.10) ;}100%{opacity:0; transform: scaleX(0.30) scaleY(0.30) ;}}@-moz-keyframes animationFrames{0%{opacity:1; -moz-transform: scaleX(1.00) scaleY(1.00) ;}25%{opacity:1; -moz-transform: scaleX(0.95) scaleY(0.95) ;}50%{opacity:1; -moz-transform: scaleX(1.10) scaleY(1.10) ;}100%{opacity:0; -moz-transform: scaleX(0.30) scaleY(0.30) ;}}@-webkit-keyframes animationFrames{0%{opacity:1; -webkit-transform: scaleX(1.00) scaleY(1.00) ;}25%{opacity:1; -webkit-transform: scaleX(0.95) scaleY(0.95) ;}50%{opacity:1; -webkit-transform: scaleX(1.10) scaleY(1.10) ;}100%{opacity:0; -webkit-transform: scaleX(0.30) scaleY(0.30) ;}}@-o-keyframes animationFrames{0%{opacity:1; -o-transform: scaleX(1.00) scaleY(1.00) ;}25%{opacity:1; -o-transform: scaleX(0.95) scaleY(0.95) ;}50%{opacity:1; -o-transform: scaleX(1.10) scaleY(1.10) ;}100%{opacity:0; -o-transform: scaleX(0.30) scaleY(0.30) ;}}@-ms-keyframes animationFrames{0%{opacity:1; -ms-transform: scaleX(1.00) scaleY(1.00) ;}25%{opacity:1; -ms-transform: scaleX(0.95) scaleY(0.95) ;}50%{opacity:1; -ms-transform: scaleX(1.10) scaleY(1.10) ;}100%{opacity:0; -ms-transform: scaleX(0.30) scaleY(0.30) ;}}</style><style type="text/css"> #c{position:fixed;}</style></head><body onload="draw()"><canvas id="c"></canvas><div class="container"><section> <h3 style="color:white">Fatih YILDIZLI <small class="pull-right"><kbd>Software Engineer </kbd></small></h3> <center><img src="img/me.jpeg" class="img-circle" width="120" height="120"></center> </section> </br> </br><section><center><ul class="list-inline"> <li> <a href="https://medium.com/@fatih_yildizli" target="_blank" class="btn btn-default btn-lg"><span> <b> M </b> Medium</span></a> </li><li> <a href="https://github.com/fatihyildizli" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span>Github</span></a> </li><li> <a href="https://www.linkedin.com/in/fyildizli" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a> </li></ul></center></section><section><h3><i class="fa fa-circle-o-notch fa-spin" style="color:#5bc0de"></i> <span style="color:white">Skills</span></h3> <div class="row"> <div class="col-md-6"> <h4><kbd> Service Layer </kbd> <button type="button" class="btn btn-default pull-right" style="cursor:default" data-toggle="collapse" data-target="#bd" ><i id="element-animation" class="fa fa-angle-double-down"></i></button> </h4><div id="bd" class="collapse"></br><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i>ASP.NET Web API 2 </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" ariaaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i>.Net Core</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> ASP.NET</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Python</span> </div></div></div></div></div><div class="row"> <div class="col-md-6"><h4><kbd>Business Layer</kbd> <button type="button" class="btn btn-default pull-right" style="cursor:default" data-toggle="collapse" data-target="#fd" ><i id="element-animation" class="fa fa-angle-double-down"></i></button></h4> <div id="fd" class="collapse"> </br> <div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Elastic Search </span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Redis</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> RabbitMQ</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Fluent Validation</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Log4Net</span></div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> NUnit</span> </div></div></div></div></div><div class="row"> <div class="col-md-6"><h4><kbd>Data Access Layer</kbd> <button type="button" class="btn btn-default pull-right" style="cursor:default" data-toggle="collapse" data-target="#wm" > <i id="element-animation" class="fa fa-angle-double-down"></i></button></h4><div id="wm" class="collapse"></br><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Entity Framework</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Dapper</span> </div></div></div></div></div><div class="row"> <div class="col-md-6"><h4><kbd>Database Server</kbd> <button type="button" class="btn btn-default pull-right" style="cursor:default" data-toggle="collapse" data-target="#dd" ><i id="element-animation" class="fa fa-angle-double-down"></i></button></h4><div id="dd" class="collapse"></br><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> MongoDB</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> PouchDB</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> MSSQL</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> RavenDB</span> </div></div></div></div></div><div class="row"> <div class="col-md-6"><h4><kbd>Tools & Methodology & Technology</kbd> <button type="button" class="btn btn-default pull-right" style="cursor:default" data-toggle="collapse" data-target="#dt" ><i id="element-animation" class="fa fa-angle-double-down"></i></button></h4><div id="dt" class="collapse"></br><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> JIRA</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Confluence</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Scrum - Agile Development</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> OOP Programming</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> SOLID</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Web Scraping & Crawling</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Wordpress</span> </div></div></div></div></div><div class="row"> <div class="col-md-6"><h4><kbd>Design & Frontend Development</kbd> <button type="button" class="btn btn-default pull-right" style="cursor:default" data-toggle="collapse" data-target="#d" > <i id="element-animation" class="fa fa-angle-double-down"></i></button></h4><div id="d" class="collapse"></br><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" ariaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Adobe Photoshop</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" ariaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i>HTML5 -CSS3</span> </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" ariaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i>Javascript</span> </div></div></div></div></div></section> <section><h3><i class="fa fa-circle-o-notch fa-spin" style="color:#5bc0de"></i> <span style="color:white">Interest</span></h3> <div class="row"> <div class="col-md-6"> <kbd>Trail Running</kbd> <kbd>Running</kbd> <kbd>Outdoor Fitness</kbd> <kbd>Crossfit</kbd> <kbd>Boxing</kbd></br></br> <kbd>Hapkido</kbd> <kbd> Software Development</kbd></div></div></section> <div class="navbar-fixed-bottom"> <footer class="col-md-2 col-md-offset-5"> <span class="pull-right"><p style="color:#fff" class="footer">&copy; 2018 - <kbd>Fatih Yıldızlı</kbd> <br/></p></span> </footer> </div></body><script type="text/javascript">function draw(){var c=document.getElementById("c");var ctx=c.getContext("2d");c.height=window.innerHeight;c.width=window.innerWidth;var set="fatih yıldızlı";set=set.split("");var font_size=10;var columns=c.width/font_size; var drops=[];for(var x=0; x < columns; x++) drops[x]=1; function draw(){ctx.fillStyle="rgba(0, 0, 0, 0.05)"; ctx.fillRect(0, 0, c.width, c.height); ctx.fillStyle="#0F0"; ctx.font=font_size + "px arial"; for(var i=0; i < drops.length; i++){var text=set[Math.floor(Math.random()*set.length)]; ctx.fillText(text, i*font_size, drops[i]*font_size); if(drops[i]*font_size > c.height && Math.random() > 0.975) drops[i]=0; drops[i]++;}}setInterval(draw, 33);}</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-61816066-2"></script><script>window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date()); gtag('config', 'UA-61816066-2');</script></html>
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fatih Yıldızlı Open Cv">
+    <meta name="keywords" content="Fatih Yıldızlı,fyildizli">
+    <meta name="author" content="Fatih Yıldızlı">
+    <title>Fatih YILDIZLI | Open Cv</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+            .img-circle {
+            border-radius: 50%;
+            border: 3px solid;
+              border-color: lightgreen;}
+            .progress-bar-success {
+                background-color: black;
+            }
+            kbd {
+                background-color: #5bc0de;
+                color: black;
+                font-weight: bold;
+            }
+            #c {
+                background: black;
+            }
+            canvas {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: -1;
+            }
+            img.grey {
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+            }
+            img:hover {
+                -webkit-filter: grayscale(0%);
+                -webkit-transition: .5s ease-in-out;
+                -moz-filter: grayscale(0%);
+                -moz-transition: .5s ease-in-out;
+                -o-filter: grayscale(0%);
+                -o-transition: .5s ease-in-out;
+                filter: grayscale(0%);
+            }
+            #element-animation {
+                animation: animationFrames linear 3s;
+                animation-iteration-count: infinite;
+                transform-origin: 50% 50%;
+                -webkit-animation: animationFrames linear 3s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-transform-origin: 50% 50%;
+                -moz-animation: animationFrames linear 3s;
+                -moz-animation-iteration-count: infinite;
+                -moz-transform-origin: 50% 50%;
+                -o-animation: animationFrames linear 3s;
+                -o-animation-iteration-count: infinite;
+                -o-transform-origin: 50% 50%;
+                -ms-animation: animationFrames linear 3s;
+                -ms-animation-iteration-count: infinite;
+                -ms-transform-origin: 50% 50%;
+            }
+            @keyframes animationFrames {
+                0% {
+                    opacity: 1;
+                    transform: scaleX(1.00) scaleY(1.00);
+                }
+                25% {
+                    opacity: 1;
+                    transform: scaleX(0.95) scaleY(0.95);
+                }
+                50% {
+                    opacity: 1;
+                    transform: scaleX(1.10) scaleY(1.10);
+                }
+                100% {
+                    opacity: 0;
+                    transform: scaleX(0.30) scaleY(0.30);
+                }
+            }
+            @-moz-keyframes animationFrames {
+                0% {
+                    opacity: 1;
+                    -moz-transform: scaleX(1.00) scaleY(1.00);
+                }
+                25% {
+                    opacity: 1;
+                    -moz-transform: scaleX(0.95) scaleY(0.95);
+                }
+                50% {
+                    opacity: 1;
+                    -moz-transform: scaleX(1.10) scaleY(1.10);
+                }
+                100% {
+                    opacity: 0;
+                    -moz-transform: scaleX(0.30) scaleY(0.30);
+                }
+            }
+            @-webkit-keyframes animationFrames {
+                0% {
+                    opacity: 1;
+                    -webkit-transform: scaleX(1.00) scaleY(1.00);
+                }
+                25% {
+                    opacity: 1;
+                    -webkit-transform: scaleX(0.95) scaleY(0.95);
+                }
+                50% {
+                    opacity: 1;
+                    -webkit-transform: scaleX(1.10) scaleY(1.10);
+                }
+                100% {
+                    opacity: 0;
+                    -webkit-transform: scaleX(0.30) scaleY(0.30);
+                }
+            }
+            @-o-keyframes animationFrames {
+                0% {
+                    opacity: 1;
+                    -o-transform: scaleX(1.00) scaleY(1.00);
+                }
+                25% {
+                    opacity: 1;
+                    -o-transform: scaleX(0.95) scaleY(0.95);
+                }
+                50% {
+                    opacity: 1;
+                    -o-transform: scaleX(1.10) scaleY(1.10);
+                }
+                100% {
+                    opacity: 0;
+                    -o-transform: scaleX(0.30) scaleY(0.30);
+                }
+            }
+            @-ms-keyframes animationFrames {
+                0% {
+                    opacity: 1;
+                    -ms-transform: scaleX(1.00) scaleY(1.00);
+                }
+                25% {
+                    opacity: 1;
+                    -ms-transform: scaleX(0.95) scaleY(0.95);
+                }
+                50% {
+                    opacity: 1;
+                    -ms-transform: scaleX(1.10) scaleY(1.10);
+                }
+                100% {
+                    opacity: 0;
+                    -ms-transform: scaleX(0.30) scaleY(0.30);
+                }
+            }
+    </style>
+    <style type="text/css">
+        #c {
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body onload="draw()">
+    <canvas id="c"></canvas>
+    <div class="container">
+        <section>
+            <h3 style="color:white">Fatih YILDIZLI <small class="pull-right"><kbd>Software Engineer </kbd></small></h3>
+            <center><img src="img/me.jpeg" class="img-circle" width="120" height="120"></center>
+        </section>
+        </br>
+        </br>
+        <section>
+            <center>
+                <ul class="list-inline">
+                    <li> <a href="https://medium.com/@fatih_yildizli" target="_blank" class="btn btn-default btn-lg"><span> <b> M </b> Medium</span></a> </li>
+                    <li> <a href="https://github.com/fatihyildizli" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span>Github</span></a> </li>
+                    <li> <a href="https://www.linkedin.com/in/fyildizli" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a> </li>
+                </ul>
+            </center>
+        </section>
+        <section>
+            <h3><i class="fa fa-circle-o-notch fa-spin" style="color:#5bc0de"></i> <span style="color:white">Skills</span></h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4><kbd> Service Layer </kbd> <button type="button" class="btn btn-default pull-right" style="cursor:default" data-toggle="collapse" data-target="#bd" ><i id="element-animation" class="fa fa-angle-double-down"></i></button> </h4>
+                    <div id="bd" class="collapse">
+                        </br>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i>ASP.NET Web API 2 </div></div><div class="progress" style="background-color:transparent"> <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" ariaaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i>.Net Core</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> ASP.NET</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Python</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4><kbd>Business Layer</kbd> <button type="button" class="btn btn-default pull-right" style="cursor:default" data-toggle="collapse" data-target="#fd" ><i id="element-animation" class="fa fa-angle-double-down"></i></button></h4>
+                    <div id="fd" class="collapse">
+                        </br>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Elastic Search </span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Redis</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> RabbitMQ</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Fluent Validation</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Log4Net</span></div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> NUnit</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4><kbd>Data Access Layer</kbd> <button type="button" class="btn btn-default pull-right" style="cursor:default" data-toggle="collapse" data-target="#wm" > <i id="element-animation" class="fa fa-angle-double-down"></i></button></h4>
+                    <div id="wm" class="collapse">
+                        </br>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Entity Framework</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" araria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Dapper</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4><kbd>Database Server</kbd> <button type="button" class="btn btn-default pull-right" style="cursor:default" data-toggle="collapse" data-target="#dd" ><i id="element-animation" class="fa fa-angle-double-down"></i></button></h4>
+                    <div id="dd" class="collapse">
+                        </br>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> MongoDB</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> PouchDB</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> MSSQL</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> RavenDB</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4><kbd>Tools & Methodology & Technology</kbd> <button type="button" class="btn btn-default pull-right" style="cursor:default" data-toggle="collapse" data-target="#dt" ><i id="element-animation" class="fa fa-angle-double-down"></i></button></h4>
+                    <div id="dt" class="collapse">
+                        </br>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> JIRA</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Confluence</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Scrum - Agile Development</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> OOP Programming</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> SOLID</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Web Scraping & Crawling</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Wordpress</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4><kbd>Design & Frontend Development</kbd> <button type="button" class="btn btn-default pull-right" style="cursor:default" data-toggle="collapse" data-target="#d" > <i id="element-animation" class="fa fa-angle-double-down"></i></button></h4>
+                    <div id="d" class="collapse">
+                        </br>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" ariaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i> Adobe Photoshop</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" ariaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i>HTML5 -CSS3</span> </div>
+                        </div>
+                        <div class="progress" style="background-color:transparent">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" ariaria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> <span class="pull-left" style="color:#fff;font-family:Tahoma, Geneva, sans-serif"> <i class="fa fa-spinner fa-spin" style="color:#0F0"></i>Javascript</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3><i class="fa fa-circle-o-notch fa-spin" style="color:#5bc0de"></i> <span style="color:white">Interest</span></h3>
+            <div class="row">
+                <div class="col-md-6"> <kbd>Trail Running</kbd> <kbd>Running</kbd> <kbd>Outdoor Fitness</kbd> <kbd>Crossfit</kbd> <kbd>Boxing</kbd></br>
+                    </br> <kbd>Hapkido</kbd> <kbd> Software Development</kbd></div>
+            </div>
+        </section>
+        <div class="navbar-fixed-bottom">
+            <footer class="col-md-2 col-md-offset-5"> <span class="pull-right"><p style="color:#fff" class="footer">&copy; 2018 - <kbd>Fatih Yıldızlı</kbd> <br/></p></span> </footer>
+        </div>
+</body>
+<script type="text/javascript">
+    function draw() {
+        var c = document.getElementById("c");
+        var ctx = c.getContext("2d");
+        c.height = window.innerHeight;
+        c.width = window.innerWidth;
+        var set = "fatih yıldızlı";
+        set = set.split("");
+        var font_size = 10;
+        var columns = c.width / font_size;
+        var drops = [];
+        for (var x = 0; x < columns; x++) drops[x] = 1;
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+            ctx.fillRect(0, 0, c.width, c.height);
+            ctx.fillStyle = "#0F0";
+            ctx.font = font_size + "px arial";
+            for (var i = 0; i < drops.length; i++) {
+                var text = set[Math.floor(Math.random() * set.length)];
+                ctx.fillText(text, i * font_size, drops[i] * font_size);
+                if (drops[i] * font_size > c.height && Math.random() > 0.975) drops[i] = 0;
+                drops[i]++;
+            }
+        }
+        setInterval(draw, 33);
+    }
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-61816066-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-61816066-2');
+</script>
+
+</html>
